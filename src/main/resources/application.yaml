@@ -1,1 +1,8 @@
-spring.application.name=ReviewService
+spring:
+  application:
+    name: ReviewService
+server:
+  port: 8084
+servicedb:
+  api:
+    url: http://localhost:8081

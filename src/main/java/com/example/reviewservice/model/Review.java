@@ -10,7 +10,7 @@ public class Review {
     private int rating;
     private int numberOfLikes;
     private int numberOfDislikes;
-    private String text;
+    private String reviewText;
     private LocalDate publicationDate;
     private User user;
     private Film film;

@@ -138,6 +138,10 @@ public class ReviewCatalogService {
             log.warn("Film ID is required for review");
             throw new IllegalArgumentException("Film ID is required");
         }
+        if (review.getReviewText() == null || review.getReviewText().trim().isEmpty()) {
+            log.warn("Review text is required");
+            throw new IllegalArgumentException("Review text is required");
+        }
     }
 
     private void verifyUserExists(Long userId) {
